@@ -108,7 +108,7 @@ def Wlecome(Ctext=logoScript, Thitungan=5,):
     jarak_atas_bawah = os.get_terminal_size().columns
     for line in jarak_kanan_kiri:
         print(line.center(jarak_atas_bawah))
-    print("\n" + "=" * 89)
+    print("\n" + "=" * 76)
 
 #--------------- URL Finder ---------------
 def URLFinder(url,):
@@ -227,24 +227,16 @@ def URLFinder(url,):
             except requests.RequestException:
                 continue
         return {
-            f"{LRD}status' : 'tidak ada halaman login ditemukan!{X}"
-        }
+        'status': f"{LRD}tidak ada halaman login ditemukan!{X}"
+    }
     except requests.RequestException as err:
         return {
-            f"{LRD} Error: {err}{X}\n {RD} status : 'Tidak dapat mengakses URL atau tidak valid'{X}"
-        }
+        'status': f"{LRD}Error: {err}{X}\n{RD}Tidak dapat mengakses URL atau tidak valid{X}"
+    }
     except Exception as eror2_status2:
         return {
-            f"{LRD} Error: {eror2_status2}{X}\n {RD} status : 'Terjadi kesalahan saat memproses URL'{X}"
-        }
-                    
-            
-                
-            
-             
-            
-        
-            
+        'status': f"{LRD}Error: {eror2_status2}{X}\n{RD}Terjadi kesalahan saat memproses URL{X}"
+    }
 
 
 #--------------- MAIN ---------------
