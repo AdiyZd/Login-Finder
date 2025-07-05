@@ -20,7 +20,7 @@ python3 installasi.py
 ```
 3. Atau instal manual dependensi:
 ```bash
-pip install requests beautifulsoup4
+pip install -r requirements.txt
 ```
 4. 🚀 Penggunaan
 ```bash
