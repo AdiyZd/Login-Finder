@@ -1,0 +1,4 @@
+requests
+asciimatics
+beautifulsoup4
+pyfiglet
