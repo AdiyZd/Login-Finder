@@ -127,7 +127,8 @@ def URLFinder(url,):
             , 'login.cgi', 'login.php3', 'login.py', 'login.rb', 'login.pl', 'login.sh', 'login.bat', 'login.exe', 'login.jar', 'login.war', 'login.xml'
             , 'login.json', 'login.yaml', 'login.yml', 'login.txt', 'login.md', 'login.css', 'login.js', 'login.xml', 'login.svg', 'login.gif', 'login.png', 'login.jpg', 'login.jpeg'
             , 'login.ico', 'login.svgz', 'login.webp', 'login.avif', 'login.tiff', 'login.tif', 'login.bmp', 'login.psd', 'login.eps', 'login.ai'
-            , 'login.indd', 'login.inx', 'login.idml', 'login.odg', 'login.odt', 'login.ods', 'login.odp', 'login.odg', 'login.odf', 'login.ott', 'login.ots', 'login.otp', 'login.odg'
+            , 'login.indd', 'login.inx', 'login.idml', 'login.odg', 'login.odt', 'login.ods', 'login.odp', 'login.odg', 'login.odf', 'login.ott', 'login.ots', 'login.otp', 'login.odg',
+            'wp-admin', 'wp-login', 'wp-login.php', 'wp-signup.php', 'xmlrpc.php', 'webmail', '2095',  'admin'
             ]
         soup = BeautifulSoup(response.text, 'html.parser')
         
@@ -199,10 +200,15 @@ def URLFinder(url,):
             '/login.indd?login=', '/login.inx?login=', '/login.idml?login=',
             '/login.odg?login=', '/login.odt?login=', '/login.ods?login=', '/login.odp?login=',
             '/login.odg?login=', '/login.odf?login=', '/login.ott?login=', '/login.ots?login=',
-            '/login.otp?login=', '/login.odg?login='
+            '/login.otp?login=', '/login.odg?login=', '/admin', 'wp-login', 'wp-admin', 'wp-login.php',
+            'wp-admin.php', 'wp-login.html', 'wp-admin.html', 'wp-login.jsp' , 'wp-admin.jsp',
+            'wp-login.asp', 'wp-admin.asp', 'wp-login.aspx', 'wp-admin.aspx' , 'wp-login.cgi',
+            'wp-admin.cgi', 'wp-login.php3', 'wp-admin.php3', 'wp-login.php4', 'wp-admin.php4',
+            'wp-login.php5', 'wp-admin.php5', 'wp-login.py', 'wp-admin.py', 'wp-login.rb',
+            'wp-admin.rb', 'wp-login.pl', 'wp-admin.pl', 'wp-login.sh'
         ]
         for patch in common_login_patch:
-            test_urlNya = url(urljoin(url, patch))
+            test_urlNya = urljoin(url, patch)
             try:
                 test_pagenya = requests.get(test_urlNya, headers=hdrs, timeout=6)
                 if test_pagenya.status_code == 200:
