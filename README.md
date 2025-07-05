@@ -13,3 +13,17 @@ Tool Python untuk mendeteksi halaman login pada sebuah website menggunakan modul
 ```bash
 git clone https://github.com/AdiyZd/Login-Finder.git
 cd Login-Finder
+```
+2. Jalankan instalasi otomatis:
+```bash
+python3 installasi.py
+```
+3. Atau instal manual dependensi:
+```bash
+pip install requests beautifulsoup4
+```
+4. 🚀 Penggunaan
+```bash
+python run.py <url_website>
+```
+
