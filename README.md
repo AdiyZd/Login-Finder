@@ -26,4 +26,8 @@ pip install requests beautifulsoup4
 ```bash
 python run.py <url_website>
 ```
+5. Contoh Penggunaan :
+```bash
+python3 run.py https://example.com
+```
 
