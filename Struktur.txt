@@ -1,0 +1,6 @@
+Login-Finder/
+├── run.py               # Script utama
+├── installasi.py        # Script instalasi
+├── requirements.txt     # Dependensi
+├── README.md            # Dokumentasi
+└── tes.jpeg             # Screenshot contoh
