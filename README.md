@@ -15,3 +15,21 @@ Tool Python untuk mendeteksi halaman login pada website menggunakan `requests` d
 git clone https://github.com/AdiyZd/Login-Finder.git
 cd Login-Finder
 python3 installasi.py
+```
+### Metode 2:  Instalasi Manual
+```bash
+git clone https://github.com/AdiyZd/Login-Finder.git
+cd Login-Finder
+pip install -r requirements.txt
+```
+## 🚀 Cara Penggunaan
+```bash
+python3 run.py <url_website>
+```
+
+## Contoh 
+```bash
+python3 run.py https://example.com
+```
+
+
