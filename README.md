@@ -5,7 +5,7 @@
 
 Tool Python untuk mendeteksi halaman login pada sebuah website menggunakan modul `requests` dan `BeautifulSoup`.
 
-![Tester Screenshot](TESTER.png)
+![Tester Screenshot](tes.jpeg)
 
 ## 📥 Instalasi
 
